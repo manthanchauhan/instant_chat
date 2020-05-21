@@ -3,8 +3,8 @@ import sys
 from select import select
 from datetime import datetime
 
-HOST = '100.82.176.46'
-POST = 1029
+HOST = 'localhost'
+POST = 9999
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_sock:
     client_sock.connect((HOST, POST))

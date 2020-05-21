@@ -4,7 +4,7 @@ import time
 from select import select
 from datetime import datetime
 
-HOST = '192.168.43.2'
+HOST = 'localhost'
 POST = 9999
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_sock:
