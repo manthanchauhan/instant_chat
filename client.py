@@ -4,10 +4,10 @@ from select import select
 from datetime import datetime
 
 HOST = 'localhost'
-POST = 9999
+PORT = 9999
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_sock:
-    client_sock.connect((HOST, POST))
+    client_sock.connect((HOST, PORT))
     print('Connected')
 
     std_input = sys.stdin
