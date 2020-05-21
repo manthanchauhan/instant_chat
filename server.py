@@ -14,6 +14,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_sock:
     print('Listening ...')
 
     client_sock, client_ip = server_sock.accept()
+    print('Connected.')
     std_input = sys.stdin
 
     with client_sock:
