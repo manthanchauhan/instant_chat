@@ -21,6 +21,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_sock:
     std_input = sys.stdin
 
     # same communication logic as server.
+    # See server.py for explanation
     with client_sock:
         end = False
         while not end:
